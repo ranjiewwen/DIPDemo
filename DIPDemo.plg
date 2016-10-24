@@ -1,0 +1,112 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DIPDemo - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4D4.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/DIPDemo.pch" /YX"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\partimeJobs\ebook\DIPREC\disk\DIPDemo\DIPDemoDoc.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4D4.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4D5.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/DIPDemo.pdb" /debug /machine:I386 /out:"Debug/DIPDemo.exe" /pdbtype:sept 
+.\Debug\cDlgMorphClose.obj
+.\Debug\cDlgMorphDilation.obj
+.\Debug\cDlgMorphErosion.obj
+.\Debug\cDlgMorphOpen.obj
+.\Debug\ChildFrm.obj
+.\Debug\DIPDemo.obj
+.\Debug\DIPDemoDoc.obj
+.\Debug\DIPDemoView.obj
+.\Debug\DlgColor.obj
+.\Debug\DlgEdgeSobelPrewitt.obj
+.\Debug\DlgFreqGaussBRF.obj
+.\Debug\DlgFreqGaussHPF.obj
+.\Debug\DlgFreqGaussLPF.obj
+.\Debug\DlgFreqIdealLPF.obj
+.\Debug\DlgGamma.obj
+.\Debug\DlgGeoRota.obj
+.\Debug\DlgGeoTran.obj
+.\Debug\DlgGeoZoom.obj
+.\Debug\DlgGrayScaling.obj
+.\Debug\DlgHist.obj
+.\Debug\DlgHough.obj
+.\Debug\DlgLinerPara.obj
+.\Debug\DlgLinTrans.obj
+.\Debug\DlgLog.obj
+.\Debug\DlgMidFilter.obj
+.\Debug\DlgMorph.obj
+.\Debug\DlgPointThre.obj
+.\Debug\DlgPointWin.obj
+.\Debug\DlgProjRestore.obj
+.\Debug\DlgSharpThre.obj
+.\Debug\DlgSmooth.obj
+.\Debug\DlgWndTran.obj
+.\Debug\Img.obj
+.\Debug\ImgProcess.obj
+.\Debug\MainFrm.obj
+.\Debug\StdAfx.obj
+.\Debug\Vector2D.obj
+.\Debug\DIPDemo.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4D5.tmp"
+<h3>Output Window</h3>
+Compiling...
+DIPDemoDoc.cpp
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4D6.tmp" with contents
+[
+/nologo /o"Debug/DIPDemo.bsc" 
+.\Debug\cDlgMorphClose.sbr
+.\Debug\cDlgMorphDilation.sbr
+.\Debug\cDlgMorphErosion.sbr
+.\Debug\cDlgMorphOpen.sbr
+.\Debug\ChildFrm.sbr
+.\Debug\DIPDemo.sbr
+.\Debug\DIPDemoDoc.sbr
+.\Debug\DIPDemoView.sbr
+.\Debug\DlgColor.sbr
+.\Debug\DlgEdgeSobelPrewitt.sbr
+.\Debug\DlgFreqGaussBRF.sbr
+.\Debug\DlgFreqGaussHPF.sbr
+.\Debug\DlgFreqGaussLPF.sbr
+.\Debug\DlgFreqIdealLPF.sbr
+.\Debug\DlgGamma.sbr
+.\Debug\DlgGeoRota.sbr
+.\Debug\DlgGeoTran.sbr
+.\Debug\DlgGeoZoom.sbr
+.\Debug\DlgGrayScaling.sbr
+.\Debug\DlgHist.sbr
+.\Debug\DlgHough.sbr
+.\Debug\DlgLinerPara.sbr
+.\Debug\DlgLinTrans.sbr
+.\Debug\DlgLog.sbr
+.\Debug\DlgMidFilter.sbr
+.\Debug\DlgMorph.sbr
+.\Debug\DlgPointThre.sbr
+.\Debug\DlgPointWin.sbr
+.\Debug\DlgProjRestore.sbr
+.\Debug\DlgSharpThre.sbr
+.\Debug\DlgSmooth.sbr
+.\Debug\DlgWndTran.sbr
+.\Debug\Img.sbr
+.\Debug\ImgProcess.sbr
+.\Debug\MainFrm.sbr
+.\Debug\StdAfx.sbr
+.\Debug\Vector2D.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4D6.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+DIPDemo.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

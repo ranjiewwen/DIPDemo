@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{2751769D-8E76-4B72-9D20-BB9D0FBDC570}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\DIPDemo.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\DIPDemo.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\DIPDemo.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\DIPDemo.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\DIPDemo.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\DIPDemo.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\DIPDemo.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\DIPDemo.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="cDlgMorphClose.cpp" />
+    <ClCompile Include="cDlgMorphDilation.cpp" />
+    <ClCompile Include="cDlgMorphErosion.cpp" />
+    <ClCompile Include="cDlgMorphOpen.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="DIPDemo.cpp" />
+    <ClCompile Include="DIPDemoDoc.cpp" />
+    <ClCompile Include="DIPDemoView.cpp" />
+    <ClCompile Include="DlgColor.cpp" />
+    <ClCompile Include="DlgEdgeSobelPrewitt.cpp" />
+    <ClCompile Include="DlgFreqGaussBRF.cpp" />
+    <ClCompile Include="DlgFreqGaussHPF.cpp" />
+    <ClCompile Include="DlgFreqGaussLPF.cpp" />
+    <ClCompile Include="DlgFreqIdealLPF.cpp" />
+    <ClCompile Include="DlgGamma.cpp" />
+    <ClCompile Include="DlgGeoRota.cpp" />
+    <ClCompile Include="DlgGeoTran.cpp" />
+    <ClCompile Include="DlgGeoZoom.cpp" />
+    <ClCompile Include="DlgGrayScaling.cpp" />
+    <ClCompile Include="DlgHist.cpp" />
+    <ClCompile Include="DlgHough.cpp" />
+    <ClCompile Include="DlgLinerPara.cpp" />
+    <ClCompile Include="DlgLinTrans.cpp" />
+    <ClCompile Include="DlgLog.cpp" />
+    <ClCompile Include="DlgMidFilter.cpp" />
+    <ClCompile Include="DlgMorph.cpp" />
+    <ClCompile Include="DlgPointThre.cpp" />
+    <ClCompile Include="DlgPointWin.cpp" />
+    <ClCompile Include="DlgProjRestore.cpp" />
+    <ClCompile Include="DlgSharpThre.cpp" />
+    <ClCompile Include="DlgSmooth.cpp" />
+    <ClCompile Include="DlgWndTran.cpp" />
+    <ClCompile Include="Img.cpp" />
+    <ClCompile Include="ImgProcess.cpp" />
+    <ClCompile Include="MainFrm.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="PixelDlg.cpp" />
+    <ClCompile Include="StdAfx.cpp" />
+    <ClCompile Include="Vector2D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cDlgMorphClose.h" />
+    <ClInclude Include="cDlgMorphDilation.h" />
+    <ClInclude Include="cDlgMorphErosion.h" />
+    <ClInclude Include="cDlgMorphOpen.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="detect.h" />
+    <ClInclude Include="DIPDemo.h" />
+    <ClInclude Include="DIPDemoDoc.h" />
+    <ClInclude Include="DIPDemoView.h" />
+    <ClInclude Include="DlgColor.h" />
+    <ClInclude Include="DlgEdgeSobelPrewitt.h" />
+    <ClInclude Include="DlgFreqGaussBRF.h" />
+    <ClInclude Include="DlgFreqGaussHPF.h" />
+    <ClInclude Include="DlgFreqGaussLPF.h" />
+    <ClInclude Include="DlgFreqIdealLPF.h" />
+    <ClInclude Include="DlgGamma.h" />
+    <ClInclude Include="DlgGeoRota.h" />
+    <ClInclude Include="DlgGeoTran.h" />
+    <ClInclude Include="DlgGeoZoom.h" />
+    <ClInclude Include="DlgGrayScaling.h" />
+    <ClInclude Include="DlgHist.h" />
+    <ClInclude Include="DlgHough.h" />
+    <ClInclude Include="DlgLinerPara.h" />
+    <ClInclude Include="DlgLinTrans.h" />
+    <ClInclude Include="DlgLog.h" />
+    <ClInclude Include="DlgMidFilter.h" />
+    <ClInclude Include="DlgMorph.h" />
+    <ClInclude Include="DlgPointThre.h" />
+    <ClInclude Include="DlgPointWin.h" />
+    <ClInclude Include="DlgProjRestore.h" />
+    <ClInclude Include="DlgSharpThre.h" />
+    <ClInclude Include="DlgSmooth.h" />
+    <ClInclude Include="DlgWndTran.h" />
+    <ClInclude Include="Img.h" />
+    <ClInclude Include="ImgProcess.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="PixelDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="test.h" />
+    <ClInclude Include="Vector2D.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\DIPDemo.ico" />
+    <Image Include="res\DIPDemoDoc.ico" />
+    <Image Include="test.bmp" />
+    <Image Include="testPD.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DIPDemo.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\DIPDemo.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="DIPDemo.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
