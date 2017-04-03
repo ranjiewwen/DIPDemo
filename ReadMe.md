@@ -1,7 +1,16 @@
-========================================================================
-       MICROSOFT FOUNDATION CLASS LIBRARY : DIPDemo
-========================================================================
+## 《数字图像处理与机器视觉:Visual C++与Matlab实现》
 
+- 各种标准图像处理算法(Matlab／Visual C++) 
+- 汽车牌照的投影失真校正(Matlab／Visual C++) 
+- 顶帽变换(Matlab／Visual C++) 
+- 主成份分析(Matlab) 
+- LBP特征提取(Matlab) 
+- 基于人工神经网络的数字识别系统(visual C++) 
+- 基于支持向量机的人脸识别系统(Matlab) 为想要了解数字图像处理与机器视觉领域的读者提供了一条扎实的进阶之路，从基本的图像处理算法，到投影校正、顶帽变换等高级应用，再到特征提取、分类器设计，以及像光学字符识别、人脸识别等综合案例，一步步地引导读者从阅读中获得知识，于实践中升华感悟。
+- Matoab与Visusl C++两种语言描述的无缝连接，体现出科学研究和工程实践在图像处理与机器视觉领域的完美结合。
+
+**该代码已经在VS2013下实验通过，很多基础的图像处理算法C++实现都在里面**
+## MICROSOFT FOUNDATION CLASS LIBRARY : DIPDemo
 
 AppWizard has created this DIPDemo application for you.  This application
 not only demonstrates the basics of using the Microsoft Foundation classes
@@ -10,11 +19,7 @@ but is also a starting point for writing your application.
 This file contains a summary of what you will find in each of the files that
 make up your DIPDemo application.
 
-DIPDemo.dsp
-    This file (the project file) contains information at the project level and
-    is used to build a single project or subproject. Other users can share the
-    project (.dsp) file, but they should export the makefiles locally.
-
+>
 DIPDemo.h
     This is the main header file for the application.  It includes other
     project specific headers (including Resource.h) and declares the
@@ -45,12 +50,9 @@ res\DIPDemo.rc2
 	Visual C++.  You should place all resources not editable by
 	the resource editor in this file.
 
+## For the main frame window:
 
-
-/////////////////////////////////////////////////////////////////////////////
-
-For the main frame window:
-
+>
 MainFrm.h, MainFrm.cpp
     These files contain the frame class CMainFrame, which is derived from
     CMDIFrameWnd and controls all MDI frame features.
@@ -61,18 +63,16 @@ res\Toolbar.bmp
     class. Edit this toolbar bitmap using the resource editor, and
     update the IDR_MAINFRAME TOOLBAR array in DIPDemo.rc to add
     toolbar buttons.
-/////////////////////////////////////////////////////////////////////////////
 
-For the child frame window:
-
+## For the child frame window:
+>
 ChildFrm.h, ChildFrm.cpp
     These files define and implement the CChildFrame class, which
     supports the child windows in an MDI application.
 
-/////////////////////////////////////////////////////////////////////////////
 
-AppWizard creates one document type and one view:
-
+## AppWizard creates one document type and one view:
+>
 DIPDemoDoc.h, DIPDemoDoc.cpp - the document
     These files contain your CDIPDemoDoc class.  Edit these files to
     add your special document data and to implement file saving and loading
@@ -88,30 +88,3 @@ res\DIPDemoDoc.ico
     resource file DIPDemo.rc.
 
 
-/////////////////////////////////////////////////////////////////////////////
-Other standard files:
-
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named DIPDemo.pch and a precompiled types file named StdAfx.obj.
-
-Resource.h
-    This is the standard header file, which defines new resource IDs.
-    Microsoft Visual C++ reads and updates this file.
-
-/////////////////////////////////////////////////////////////////////////////
-Other notes:
-
-AppWizard uses "TODO:" to indicate parts of the source code you
-should add to or customize.
-
-If your application uses MFC in a shared DLL, and your application is 
-in a language other than the operating system's current language, you
-will need to copy the corresponding localized resources MFC42XXX.DLL
-from the Microsoft Visual C++ CD-ROM onto the system or system32 directory,
-and rename it to be MFCLOC.DLL.  ("XXX" stands for the language abbreviation.
-For example, MFC42DEU.DLL contains resources translated to German.)  If you
-don't do this, some of the UI elements of your application will remain in the
-language of the operating system.
-
-/////////////////////////////////////////////////////////////////////////////
